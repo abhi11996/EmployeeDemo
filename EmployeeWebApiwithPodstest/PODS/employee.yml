@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-employee
+  labels:
+    app: web
+spec:
+  containers:
+    - name: web-ctr
+      image: ghadi2021/employeedemo:dockerdemo
+      ports:
+        - containerPort: 8086
